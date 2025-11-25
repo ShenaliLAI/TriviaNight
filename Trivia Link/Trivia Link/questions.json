@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "What color is the sky on a clear, sunny day?",
+    "options": ["Blue", "Green", "Red", "Purple"],
+    "correctIndex": 0
+  },
+  {
+    "id": 2,
+    "category": "Movies",
+    "difficulty": "easy",
+    "question": "Which animated movie features a talking snowman named Olaf?",
+    "options": ["Frozen", "Toy Story", "Shrek", "Moana"],
+    "correctIndex": 0
+  },
+  {
+    "id": 3,
+    "category": "Animals",
+    "difficulty": "easy",
+    "question": "Which animal is known as the 'king of the jungle'?",
+    "options": ["Lion", "Elephant", "Tiger", "Giraffe"],
+    "correctIndex": 0
+  },
+  {
+    "id": 4,
+    "category": "Space",
+    "difficulty": "medium",
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+    "correctIndex": 0
+  },
+  {
+    "id": 5,
+    "category": "Kids",
+    "difficulty": "easy",
+    "question": "How many legs does a spider have?",
+    "options": ["Six", "Eight", "Ten", "Four"],
+    "correctIndex": 1
+  },
+  {
+    "id": 6,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "What do bees make that humans often eat on toast?",
+    "options": ["Jam", "Butter", "Honey", "Cheese"],
+    "correctIndex": 2
+  },
+  {
+    "id": 7,
+    "category": "Movies",
+    "difficulty": "medium",
+    "question": "In which movie does a boy named Andy own toys that come to life?",
+    "options": ["Toy Story", "Cars", "Finding Nemo", "Coco"],
+    "correctIndex": 0
+  },
+  {
+    "id": 8,
+    "category": "Animals",
+    "difficulty": "medium",
+    "question": "Which sea creature has eight arms?",
+    "options": ["Shark", "Dolphin", "Octopus", "Whale"],
+    "correctIndex": 2
+  },
+  {
+    "id": 9,
+    "category": "Space",
+    "difficulty": "hard",
+    "question": "What is the name of our galaxy?",
+    "options": ["Andromeda", "Milky Way", "Whirlpool", "Orion"],
+    "correctIndex": 1
+  },
+  {
+    "id": 10,
+    "category": "Kids",
+    "difficulty": "medium",
+    "question": "Which fairy tale character left a glass slipper at the ball?",
+    "options": ["Snow White", "Rapunzel", "Cinderella", "Sleeping Beauty"],
+    "correctIndex": 2
+  },
+  {
+    "id": 11,
+    "category": "General",
+    "difficulty": "hard",
+    "question": "How many continents are there on Earth?",
+    "options": ["Five", "Six", "Seven", "Eight"],
+    "correctIndex": 2
+  },
+  {
+    "id": 12,
+    "category": "Space",
+    "difficulty": "medium",
+    "question": "What is the name of the first man to walk on the Moon?",
+    "options": ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "Alan Shepard"],
+    "correctIndex": 0
+  },
+  {
+    "id": 101,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "How many days are there in a week?",
+    "options": ["5", "6", "7", "8"],
+    "correctIndex": 2
+  },
+  {
+    "id": 102,
+    "category": "Animals",
+    "difficulty": "easy",
+    "question": "Which animal says 'meow'?",
+    "options": ["Dog", "Cat", "Cow", "Duck"],
+    "correctIndex": 1
+  },
+  {
+    "id": 103,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "What do you use to write on a blackboard?",
+    "options": ["Chalk", "Fork", "Spoon", "Glue"],
+    "correctIndex": 0
+  },
+  {
+    "id": 104,
+    "category": "Space",
+    "difficulty": "medium",
+    "question": "What is the name of the star at the center of our solar system?",
+    "options": ["The Moon", "Mars", "The Sun", "Polaris"],
+    "correctIndex": 2
+  },
+  {
+    "id": 105,
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "What is the largest ocean on Earth?",
+    "options": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
+    "correctIndex": 1
+  },
+  {
+    "id": 106,
+    "category": "Math",
+    "difficulty": "easy",
+    "question": "What is 5 + 3?",
+    "options": ["6", "7", "8", "9"],
+    "correctIndex": 2
+  },
+  {
+    "id": 107,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which of these is a season of the year?",
+    "options": [" Monday", "Summer", "Breakfast", "Night"],
+    "correctIndex": 1
+  },
+  {
+    "id": 108,
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What do plants need to make their own food?",
+    "options": ["Sunlight, water, and air", "Sand and rocks", "Milk and sugar", "Only water"],
+    "correctIndex": 0
+  },
+  {
+    "id": 109,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which sense do you use to smell a flower?",
+    "options": ["Sight", "Hearing", "Smell", "Taste"],
+    "correctIndex": 2
+  },
+  {
+    "id": 110,
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Which sport is played with a bat and ball and has wickets?",
+    "options": ["Football", "Basketball", "Cricket", "Tennis"],
+    "correctIndex": 2
+  },
+  {
+    "id": 201,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "What do you call a baby cat?",
+    "options": ["Puppy", "Kitten", "Calf", "Chick"],
+    "correctIndex": 1
+  },
+  {
+    "id": 202,
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Which direction does the sun rise from?",
+    "options": ["North", "South", "East", "West"],
+    "correctIndex": 2
+  },
+  {
+    "id": 203,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "Which shape has three sides?",
+    "options": ["Square", "Rectangle", "Triangle", "Circle"],
+    "correctIndex": 2
+  },
+  {
+    "id": 204,
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Which of these is a source of clean drinking water?",
+    "options": ["Sea water", "River water", "Rain water", "Paint"],
+    "correctIndex": 2
+  },
+  {
+    "id": 205,
+    "category": "Animals",
+    "difficulty": "easy",
+    "question": "Which animal can fly?",
+    "options": ["Lion", "Elephant", "Bird", "Zebra"],
+    "correctIndex": 2
+  },
+  {
+    "id": 206,
+    "category": "Space",
+    "difficulty": "medium",
+    "question": "What is the name of the planet we live on?",
+    "options": ["Mars", "Venus", "Earth", "Jupiter"],
+    "correctIndex": 2
+  },
+  {
+    "id": 207,
+    "category": "Math",
+    "difficulty": "easy",
+    "question": "What is 10 - 4?",
+    "options": ["5", "6", "7", "8"],
+    "correctIndex": 1
+  },
+  {
+    "id": 208,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which of these is used to tell the time?",
+    "options": ["Clock", "Chair", "Spoon", "Ball"],
+    "correctIndex": 0
+  },
+  {
+    "id": 209,
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Which part of the plant is usually green and makes food?",
+    "options": ["Roots", "Stem", "Leaves", "Flower"],
+    "correctIndex": 2
+  },
+  {
+    "id": 210,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which of these is a musical instrument?",
+    "options": ["Piano", "Plate", "Pillow", "Pencil"],
+    "correctIndex": 0
+  },
+  {
+    "id": 301,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "What do you call a place where you borrow books?",
+    "options": ["Hospital", "Library", "Bakery", "Garage"],
+    "correctIndex": 1
+  },
+  {
+    "id": 302,
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Which of these is a continent?",
+    "options": ["Africa", "Pacific", "Sahara", "Nile"],
+    "correctIndex": 0
+  },
+  {
+    "id": 303,
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Which gas do humans need to breathe?",
+    "options": ["Oxygen", "Carbon dioxide", "Smoke", "Steam"],
+    "correctIndex": 0
+  },
+  {
+    "id": 304,
+    "category": "Animals",
+    "difficulty": "easy",
+    "question": "Which animal lives in water and has gills?",
+    "options": ["Dog", "Fish", "Eagle", "Horse"],
+    "correctIndex": 1
+  },
+  {
+    "id": 305,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "How many wheels does a bicycle have?",
+    "options": ["1", "2", "3", "4"],
+    "correctIndex": 1
+  },
+  {
+    "id": 306,
+    "category": "Math",
+    "difficulty": "easy",
+    "question": "What is 4 x 2?",
+    "options": ["6", "7", "8", "9"],
+    "correctIndex": 2
+  },
+  {
+    "id": 307,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which of these do you wear on your feet?",
+    "options": ["Hat", "Gloves", "Shoes", "Scarf"],
+    "correctIndex": 2
+  },
+  {
+    "id": 308,
+    "category": "Space",
+    "difficulty": "medium",
+    "question": "What do we call a group of stars that forms a pattern in the sky?",
+    "options": ["Planet", "Constellation", "Comet", "Rocket"],
+    "correctIndex": 1
+  },
+  {
+    "id": 309,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which of these foods is a fruit?",
+    "options": ["Carrot", "Potato", "Apple", "Broccoli"],
+    "correctIndex": 2
+  },
+  {
+    "id": 310,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "What do you call the person who teaches you at school?",
+    "options": ["Doctor", "Driver", "Teacher", "Pilot"],
+    "correctIndex": 2
+  }
+]
