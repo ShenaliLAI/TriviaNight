@@ -1,168 +1,72 @@
 # TriviaNight
 MADD Assignment part B
 
-TriviaNightTV
-A Local Multiplayer Trivia Game for Kids (tvOS Only)
-Overview
-TriviaNightTV is a fully local multiplayer trivia game designed for children aged 6 to 12.
-The app runs exclusively on tvOS and is controlled entirely with the Apple TV Remote.
-Up to four players can participate using a turn-based answering system.
-Players select how many participants will play, enter their names, choose avatars, and then compete in a trivia quiz chosen from a randomly shuffled set of questions loaded from a JSON file.
-This project is developed according to the requirements of the coursework document:
-/mnt/data/Assignment 02 - 2025.pdf.
-________________________________________
-Key Features
-1. Player Count Selection
-    •	Choose between 2, 3, or 4 players.
-    •	Game length automatically changes:
-        o	2 players: 10 questions
-        o	3 players: 12 questions
-        o	4 players: 20 questions
-2. Player Setup
-    Each player provides:
-        •	Name (entered using the tvOS keyboard)
-        •	Avatar (selected from a child-friendly emoji set)
-3. Game Lobby
-    A summary of all players before the game begins.
-    Includes a Start button and a short instructions panel.
-4. Trivia Questions
-    •	Questions loaded from a bundled JSON file.
-    •	Questions are shuffled every session.
-    •	Categories include science, animals, space, general knowledge, and kid-friendly topics.
-5. Answering System
-    •	Turn-based answering using the TV remote.
-    •	Each option (A/B/C/D) is presented as a large, easy-to-select button.
-    •	Count-down timer per question.
-    •	Player strip to track whose turn it is.
-6. Reveal and Scoring
-    After all players answer:
-    •	The correct answer is highlighted.
-    •	Incorrect answers fade out.
-    •	Points are applied based on correctness and speed.
-Scoring Rules
-    •	Correct answer: 100 points
-    •	Fastest correct answer bonus:
-        o	First fastest: 20 points
-        o	Second fastest: 10 points
-        o	Third fastest: 5 points
-7. Final Leaderboard
-    A ranking of players sorted from highest to lowest score with final statistics.
-8. Kid-Friendly User Interface
-    •	Large fonts
-    •	High contrast colors
-    •	Clear navigation
-    •	Smooth animations
-    •	Intuitive UX designed specifically for ages 6–12
-________________________________________
-Architecture
-Technologies Used
-    •	Swift
-    •	SwiftUI
-    •	tvOS Focus Engine
-    •	Combine
-    •	JSON data loading
-    •	Unit and UI testing
-    
-Project Structure
-    TriviaNightTV/
-    ├── Models/
-    │   ├── Player.swift
-    │   ├── TriviaQuestion.swift
-    │   └── TriviaMessage.swift
-    ├── Managers/
-    │   └── TriviaManager.swift
-    ├── ViewModels/
-    │   ├── LobbyViewModel.swift
-    │   ├── GameViewModel.swift
-    │   └── SettingsViewModel.swift
-    ├── Views/
-    │   ├── SplashScreen.swift
-    │   ├── MainMenuView.swift
-    │   ├── PlayerCountSelectionView.swift
-    │   ├── PlayerSetupView.swift
-    │   ├── GameLobbyView.swift
-    │   ├── QuestionView.swift
-    │   ├── RevealView.swift
-    │   └── FinalLeaderboardView.swift
-    ├── Components/
-    │   ├── PlayerRow.swift
-    │   ├── AnswerButton.swift
-    │   ├── TimerBar.swift
-    │   ├── AvatarSelector.swift
-    │   └── ScoreBadge.swift
-    ├── Resources/
-    │   └── questions.json
-    ├── Tests/
-    │   ├── TriviaManagerTests.swift
-    │   └── GameFlowUITests.swift
-    └── README.md
-________________________________________
-Game Logic
-Trivia Manager
-    Responsible for:
-    •	Loading the JSON file
-    •	Shuffling questions
-    •	Tracking current question index
-    •	Computing scores
-    •	Calculating fastest responder bonuses
-Data Models
-    Player
-        struct Player: Identifiable, Codable {
-            let id: UUID
-            var name: String
-            var avatar: String
-            var score: Int
-            var fastestAnswerCount: Int
-        }
-    TriviaQuestion
-        struct TriviaQuestion: Codable, Identifiable {
-            let id: Int
-            let category: String
-            let difficulty: String
-            let question: String
-            let options: [String]
-            let correctIndex: Int
-        }
-________________________________________
-Accessibility
-    •	High-contrast color palette
-    •	Large, readable fonts
-    •	Clear focus states for remote navigation
-    •	VoiceOver labels for interactive elements
-________________________________________
-Testing
-    Unit Tests
-    •	Scoring logic
-    •	Fastest-answer bonus logic
-    •	Data loading from JSON
-    •	Question shuffling
-    UI Tests
-    •	Player setup flow
-    •	Question → Reveal navigation
-    •	Final leaderboard display
-________________________________________
-How to Run the Project
-Requirements
-    •	Xcode 15 or later
-    •	tvOS 17+ SDK
-    •	Apple TV device or tvOS Simulator
-Steps
-    1.	Clone the repository.
-    2.	Open TriviaNightTV.xcodeproj in Xcode.
-    3.	Select the TriviaNightTV tvOS target.
-    4.	Run on Apple TV Simulator or real Apple TV device.
-________________________________________
-Assignment Requirement Mapping
-    Requirement	How It Is Fulfilled
-    Emerging technology	SwiftUI, tvOS Focus Engine
-    Multi-screen navigation	Full game flow from setup to leaderboard
-    Data handling	JSON-based question loading and shuffling
-    Advanced interaction	Remote-based answering, animations
-    UI/UX	Kid-friendly, animated, high contrast
-    Persistent design principles	Structured MVVM architecture
-    Real-world applicability	Educational trivia for children
-    Testing	Includes unit and UI tests
-________________________________________
-License
-    This project is intended solely for educational and academic purposes as part of the coursework.
+# Trivia Night
+
+A multiplayer trivia game built with SwiftUI for Apple TV (tvOS). One person hosts the game on the TV, and players take turns answering multiple-choice questions. The app tracks individual scores and shows a celebratory results screen at the end of the game.
+
+## Features
+
+- *Apple TV host experience*
+- *Lobby screen* to choose 1–4 players and customize player names
+- *Multiple-choice questions* loaded from local JSON (questions.json)
+- *Per-player turn system* and per-player score tracking
+- *Animated UI* with gradients, confetti, and trophy animation
+- *Results screen* highlighting the winner(s)
+
+## Tech Stack
+
+- *Language:* Swift
+- *UI Framework:* SwiftUI
+- *Platform:* tvOS / Apple TV
+- *Persistence:* Core Data template (via PersistenceController)
+
+## Project Structure (high level)
+
+- Trivia_LinkApp.swift – App entry point
+- ContentView.swift – Main navigation, lobby, questions, and results views
+- TriviaManager.swift – Loads questions from JSON, manages current question & score
+- TriviaQuestion.swift – Model for each trivia question
+- questions.json – Question bank
+- MultipeerManager.swift – Multipeer Connectivity plumbing (future extension for connected devices)
+
+## Getting Started
+
+### Requirements
+
+- Xcode (latest stable version)
+- A Mac capable of running the required Xcode version
+- tvOS simulator or a physical Apple TV device
+
+### Running the App
+
+1. Open Trivia Link.xcodeproj in Xcode.
+2. In the scheme selector, choose a *tvOS* target (e.g. Apple TV simulator).
+3. Build and run the project (⌘R).
+4. On the Apple TV simulator/device:
+   - You should see the *TriviaNightTV* home screen.
+   - Select *Host New Game* to open the lobby.
+   - Set number of players (1–4) and edit names if you like.
+   - Start the game and take turns answering questions with the remote.
+
+## Customising Questions
+
+Questions are stored in questions.json as an array of objects. Each question has:
+
+- question: The question text
+- options: Array of possible answers (e.g. 4 options)
+- correctIndex: The index (0-based) of the correct answer inside options
+
+To customize the trivia content, edit questions.json and rebuild the app.
+
+## Future Improvements / Ideas
+
+- Add companion iOS/iPadOS app as controllers via Multipeer Connectivity
+- Add categories and difficulty levels
+- Add timers and streak bonuses
+- Persist high scores and past game history
+
+## License
+
+This project is for educational use. Add a license here if you plan to open source it (e.g. MIT, Apache 2.0).
 
